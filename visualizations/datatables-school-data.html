@@ -1,11 +1,44 @@
+<!-- DataTables CSS -->
+<link rel="stylesheet" type="text/css" href="http://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.4/css/jquery.dataTables.css">
+<style>
+.filter-links { margin: 1em 0; }
+	.filter-links label {
+	  display: inline;
+	  font-weight: bold;
+	}
+	.filter-links ul {
+	  list-style: none;
+	  display: inline;
+	}
+	.filter-links ul li {
+	  list-style: none;
+	  display: inline;
+	  margin-right: 1em;
+	}
+	.filter-links ul li a.filtering {
+	  font-weight: bold;
+	}
+</style>
 
-    <table>
+ 
+<div class="filter-links hide">
+  <label>Show only:</label>
+  <ul>
+    <li><a class="filter-link" href="#small">Non-Title I</a></li>
+    <li><a class="filter-link" href="#medium">Racially identifiable</a></li>
+    <li><a class="filter-link" href="#large">Other</a></li>
+    <li><a class="filter-link filter-clear" href="#clear">All</a></li>
+  </ul>
+</div>
+
+
+    <table id="schooltable" width="100%">
       <thead>
         <tr>
           <th>School</th>
           <th>Median salary</th>
           <th>Mean salary</th>
-          <th>Free/reduced lunch %</th>
+          <th>Free/reduced<br/> lunch %</th>
           <th>Category</th>
         </tr>
       </thead>
@@ -13,513 +46,513 @@
     
         <tr>
           <td>North (ISA)</td>
-          <td>62327</td>
-          <td>59365</td>
-          <td>92</td>
+          <td style="text-align:right;">62,327</td>
+          <td style="text-align:right;">59,365</td>
+          <td style="text-align:right;">92</td>
           <td>Racially identifiable</td>
         </tr>
 
       
         <tr>
           <td>Pratt Elementary</td>
-          <td>73659</td>
-          <td>70642</td>
-          <td>75</td>
+          <td style="text-align:right;">73,659</td>
+          <td style="text-align:right;">70,642</td>
+          <td style="text-align:right;">75</td>
           <td>Other</td>
         </tr>
 
       
         <tr>
           <td>Lake Nokomis Wenonah</td>
-          <td>70568</td>
-          <td>66362</td>
-          <td>53</td>
+          <td style="text-align:right;">70,568</td>
+          <td style="text-align:right;">66,362</td>
+          <td style="text-align:right;">53</td>
           <td>Other</td>
         </tr>
 
       
         <tr>
           <td>Seward Montessori School</td>
-          <td>76234</td>
-          <td>70535</td>
-          <td>53</td>
+          <td style="text-align:right;">76,234</td>
+          <td style="text-align:right;">70,535</td>
+          <td style="text-align:right;">53</td>
           <td>Other</td>
         </tr>
 
       
         <tr>
           <td>Folwell Performing Arts</td>
-          <td>67993</td>
-          <td>65491</td>
-          <td>86</td>
+          <td style="text-align:right;">67,993</td>
+          <td style="text-align:right;">65,491</td>
+          <td style="text-align:right;">86</td>
           <td>Other</td>
         </tr>
 
       
         <tr>
           <td>Kenwood Elementary</td>
-          <td>77265</td>
-          <td>75719</td>
-          <td>28</td>
+          <td style="text-align:right;">77,265</td>
+          <td style="text-align:right;">75,719</td>
+          <td style="text-align:right;">28</td>
           <td>Non-Title I</td>
         </tr>
 
       
         <tr>
           <td>Lake Harriet Upper (Fulton)</td>
-          <td>72113</td>
-          <td>71701</td>
-          <td>9</td>
+          <td style="text-align:right;">72,113</td>
+          <td style="text-align:right;">71,701</td>
+          <td style="text-align:right;">9</td>
           <td>Non-Title I</td>
         </tr>
 
       
         <tr>
           <td>Armatage</td>
-          <td>69023</td>
-          <td>65449</td>
-          <td>28</td>
+          <td style="text-align:right;">69,023</td>
+          <td style="text-align:right;">65,449</td>
+          <td style="text-align:right;">28</td>
           <td>Non-Title I</td>
         </tr>
 
       
         <tr>
           <td>Hale Elementary</td>
-          <td>76234</td>
-          <td>74539</td>
-          <td>17</td>
+          <td style="text-align:right;">76,234</td>
+          <td style="text-align:right;">74,539</td>
+          <td style="text-align:right;">17</td>
           <td>Non-Title I</td>
         </tr>
 
       
         <tr>
           <td>South High</td>
-          <td>70053</td>
-          <td>67758</td>
-          <td>55</td>
+          <td style="text-align:right;">70,053</td>
+          <td style="text-align:right;">67,758</td>
+          <td style="text-align:right;">55</td>
           <td>Other</td>
         </tr>
 
       
         <tr>
           <td>Edison High</td>
-          <td>65932</td>
-          <td>64264</td>
-          <td>91</td>
+          <td style="text-align:right;">65,932</td>
+          <td style="text-align:right;">64,264</td>
+          <td style="text-align:right;">91</td>
           <td>Other</td>
         </tr>
 
       
         <tr>
           <td>Henry High</td>
-          <td>69023</td>
-          <td>67002</td>
-          <td>90</td>
+          <td style="text-align:right;">69,023</td>
+          <td style="text-align:right;">67,002</td>
+          <td style="text-align:right;">90</td>
           <td>Racially identifiable</td>
         </tr>
 
       
         <tr>
           <td>Nellie Stone Johnson</td>
-          <td>71083</td>
-          <td>64537</td>
-          <td>96</td>
+          <td style="text-align:right;">71,083</td>
+          <td style="text-align:right;">64,537</td>
+          <td style="text-align:right;">96</td>
           <td>Racially identifiable</td>
         </tr>
 
       
         <tr>
           <td>Richard Green Central</td>
-          <td>60266</td>
-          <td>59875</td>
-          <td>95</td>
+          <td style="text-align:right;">60,266</td>
+          <td style="text-align:right;">59,875</td>
+          <td style="text-align:right;">95</td>
           <td>Racially identifiable</td>
         </tr>
 
       
         <tr>
           <td>Bryn Mawr Primary</td>
-          <td>69023</td>
-          <td>66994</td>
-          <td>83</td>
+          <td style="text-align:right;">69,023</td>
+          <td style="text-align:right;">66,994</td>
+          <td style="text-align:right;">83</td>
           <td>Racially identifiable</td>
         </tr>
 
       
         <tr>
           <td>Hmong International Academy</td>
-          <td>69023</td>
-          <td>65005</td>
-          <td>90</td>
+          <td style="text-align:right;">69,023</td>
+          <td style="text-align:right;">65,005</td>
+          <td style="text-align:right;">90</td>
           <td>Racially identifiable</td>
         </tr>
 
       
         <tr>
           <td>Whittier Community School</td>
-          <td>63872</td>
-          <td>62106</td>
-          <td>67</td>
+          <td style="text-align:right;">63,872</td>
+          <td style="text-align:right;">62,106</td>
+          <td style="text-align:right;">67</td>
           <td>Other</td>
         </tr>
 
       
         <tr>
           <td>Northrop Elementary</td>
-          <td>65932</td>
-          <td>66030</td>
-          <td>49</td>
+          <td style="text-align:right;">65,932</td>
+          <td style="text-align:right;">66,030</td>
+          <td style="text-align:right;">49</td>
           <td>Other</td>
         </tr>
 
       
         <tr>
           <td>Emerson Spanish Immersion</td>
-          <td>61812</td>
-          <td>56918</td>
-          <td>79</td>
+          <td style="text-align:right;">61,812</td>
+          <td style="text-align:right;">56,918</td>
+          <td style="text-align:right;">79</td>
           <td>Other</td>
         </tr>
 
       
         <tr>
           <td>Hiawatha Elementary</td>
-          <td>75719</td>
-          <td>75605</td>
-          <td>55</td>
+          <td style="text-align:right;">75,719</td>
+          <td style="text-align:right;">75,605</td>
+          <td style="text-align:right;">55</td>
           <td>Other</td>
         </tr>
 
       
         <tr>
           <td>Jenny Lind</td>
-          <td>65932</td>
-          <td>63327</td>
-          <td>94</td>
+          <td style="text-align:right;">65,932</td>
+          <td style="text-align:right;">63,327</td>
+          <td style="text-align:right;">94</td>
           <td>Racially identifiable</td>
         </tr>
 
       
         <tr>
           <td>Lake Nokomis Keewaydin</td>
-          <td>65932</td>
-          <td>65353</td>
-          <td>56</td>
+          <td style="text-align:right;">65,932</td>
+          <td style="text-align:right;">65,353</td>
+          <td style="text-align:right;">56</td>
           <td>Other</td>
         </tr>
 
       
         <tr>
           <td>Sanford Middle School</td>
-          <td>69023</td>
-          <td>69419</td>
-          <td>63</td>
+          <td style="text-align:right;">69,023</td>
+          <td style="text-align:right;">69,419</td>
+          <td style="text-align:right;">63</td>
           <td>Other</td>
         </tr>
 
       
         <tr>
           <td>Anne Sullivan</td>
-          <td>70568</td>
-          <td>67755</td>
-          <td>93</td>
+          <td style="text-align:right;">70,568</td>
+          <td style="text-align:right;">67,755</td>
+          <td style="text-align:right;">93</td>
           <td>Racially identifiable</td>
         </tr>
 
       
         <tr>
           <td>Jefferson Elementary</td>
-          <td>67993</td>
-          <td>64584</td>
-          <td>95</td>
+          <td style="text-align:right;">67,993</td>
+          <td style="text-align:right;">64,584</td>
+          <td style="text-align:right;">95</td>
           <td>Other</td>
         </tr>
 
       
         <tr>
           <td>Anishinabe Academy</td>
-          <td>67993</td>
-          <td>67056</td>
-          <td>96</td>
+          <td style="text-align:right;">67,993</td>
+          <td style="text-align:right;">67,056</td>
+          <td style="text-align:right;">96</td>
           <td>Other</td>
         </tr>
 
       
         <tr>
           <td>Harrison Education Center</td>
-          <td>58206</td>
-          <td>58292</td>
-          <td>97</td>
+          <td style="text-align:right;">58,206</td>
+          <td style="text-align:right;">58,292</td>
+          <td style="text-align:right;">97</td>
           <td>Other</td>
         </tr>
 
       
         <tr>
           <td>Burroughs</td>
-          <td>72629</td>
-          <td>72314</td>
-          <td>12</td>
+          <td style="text-align:right;">72,629</td>
+          <td style="text-align:right;">72,314</td>
+          <td style="text-align:right;">12</td>
           <td>Non-Title I</td>
         </tr>
 
       
         <tr>
           <td>Bancroft Elementary</td>
-          <td>70053</td>
-          <td>67716</td>
-          <td>88</td>
+          <td style="text-align:right;">70,053</td>
+          <td style="text-align:right;">67,716</td>
+          <td style="text-align:right;">88</td>
           <td>Other</td>
         </tr>
 
       
         <tr>
           <td>Pillsbury Math/Science/Technology</td>
-          <td>72113</td>
-          <td>68520</td>
-          <td>88</td>
+          <td style="text-align:right;">72,113</td>
+          <td style="text-align:right;">68,520</td>
+          <td style="text-align:right;">88</td>
           <td>Other</td>
         </tr>
 
       
         <tr>
           <td>Northeast Middle School</td>
-          <td>63872</td>
-          <td>62215</td>
-          <td>81</td>
+          <td style="text-align:right;">63,872</td>
+          <td style="text-align:right;">62,215</td>
+          <td style="text-align:right;">81</td>
           <td>Other</td>
         </tr>
 
       
         <tr>
           <td>Dowling Elementary</td>
-          <td>78296</td>
-          <td>76633</td>
-          <td>39</td>
+          <td style="text-align:right;">78,296</td>
+          <td style="text-align:right;">76,633</td>
+          <td style="text-align:right;">39</td>
           <td>Other</td>
         </tr>
 
       
         <tr>
           <td>Anthony</td>
-          <td>65417</td>
-          <td>64191</td>
-          <td>39</td>
+          <td style="text-align:right;">65,417</td>
+          <td style="text-align:right;">64,191</td>
+          <td style="text-align:right;">39</td>
           <td>Other</td>
         </tr>
 
       
         <tr>
           <td>Ramsey Middle School</td>
-          <td>58206</td>
-          <td>59030</td>
-          <td>42</td>
+          <td style="text-align:right;">58,206</td>
+          <td style="text-align:right;">59,030</td>
+          <td style="text-align:right;">42</td>
           <td>Other</td>
         </tr>
 
       
         <tr>
           <td>Olson Middle School</td>
-          <td>52540</td>
-          <td>54772</td>
-          <td>93</td>
+          <td style="text-align:right;">52,540</td>
+          <td style="text-align:right;">54,772</td>
+          <td style="text-align:right;">93</td>
           <td>Racially identifiable</td>
         </tr>
 
       
         <tr>
           <td>Wellstone Intl High School</td>
-          <td>69023</td>
-          <td>65785</td>
-          <td>93</td>
+          <td style="text-align:right;">69,023</td>
+          <td style="text-align:right;">65,785</td>
+          <td style="text-align:right;">93</td>
           <td>Other</td>
         </tr>
 
       
         <tr>
           <td>Loring Elementary</td>
-          <td>71598</td>
-          <td>71298</td>
-          <td>65</td>
+          <td style="text-align:right;">71,598</td>
+          <td style="text-align:right;">71,298</td>
+          <td style="text-align:right;">65</td>
           <td>Other</td>
         </tr>
 
       
         <tr>
           <td>Sheridan International Fine Arts</td>
-          <td>67993</td>
-          <td>65469</td>
-          <td>94</td>
+          <td style="text-align:right;">67,993</td>
+          <td style="text-align:right;">65,469</td>
+          <td style="text-align:right;">94</td>
           <td>Racially identifiable</td>
         </tr>
 
       
         <tr>
           <td>River Bend</td>
-          <td>59751</td>
-          <td>60736</td>
-          <td>99</td>
+          <td style="text-align:right;">59,751</td>
+          <td style="text-align:right;">60,736</td>
+          <td style="text-align:right;">99</td>
           <td>Other</td>
         </tr>
 
       
         <tr>
           <td>Transition Plus</td>
-          <td>75719</td>
-          <td>71856</td>
-          <td>80</td>
+          <td style="text-align:right;">75,719</td>
+          <td style="text-align:right;">71,856</td>
+          <td style="text-align:right;">80</td>
           <td>Other</td>
         </tr>
 
       
         <tr>
           <td>North High</td>
-          <td>64387</td>
-          <td>63357</td>
-          <td>91</td>
+          <td style="text-align:right;">64,387</td>
+          <td style="text-align:right;">63,357</td>
+          <td style="text-align:right;">91</td>
           <td>Racially identifiable</td>
         </tr>
 
       
         <tr>
           <td>Kenny Elementary</td>
-          <td>72113</td>
-          <td>71034</td>
-          <td>37</td>
+          <td style="text-align:right;">72,113</td>
+          <td style="text-align:right;">71,034</td>
+          <td style="text-align:right;">37</td>
           <td>Other</td>
         </tr>
 
       
         <tr>
           <td>Bethune</td>
-          <td>49449</td>
-          <td>56036</td>
-          <td>100</td>
+          <td style="text-align:right;">49,449</td>
+          <td style="text-align:right;">56,036</td>
+          <td style="text-align:right;">100</td>
           <td>Racially identifiable</td>
         </tr>
 
       
         <tr>
           <td>Lake Harriet Lower (Audubon)</td>
-          <td>80355</td>
-          <td>78020</td>
-          <td>8</td>
+          <td style="text-align:right;">80,355</td>
+          <td style="text-align:right;">78,020</td>
+          <td style="text-align:right;">8</td>
           <td>Non-Title I</td>
         </tr>
 
       
         <tr>
           <td>Southwest High</td>
-          <td>74174</td>
-          <td>69721</td>
-          <td>39</td>
+          <td style="text-align:right;">74,174</td>
+          <td style="text-align:right;">69,721</td>
+          <td style="text-align:right;">39</td>
           <td>Other</td>
         </tr>
 
       
         <tr>
           <td>Field</td>
-          <td>75204</td>
-          <td>71868</td>
-          <td>26</td>
+          <td style="text-align:right;">75,204</td>
+          <td style="text-align:right;">71,868</td>
+          <td style="text-align:right;">26</td>
           <td>Non-Title I</td>
         </tr>
 
       
         <tr>
           <td>Barton Open</td>
-          <td>73144</td>
-          <td>72332</td>
-          <td>26</td>
+          <td style="text-align:right;">73,144</td>
+          <td style="text-align:right;">72,332</td>
+          <td style="text-align:right;">26</td>
           <td>Non-Title I</td>
         </tr>
 
       
         <tr>
           <td>Hall International</td>
-          <td>72113</td>
-          <td>68099</td>
-          <td>88</td>
+          <td style="text-align:right;">72,113</td>
+          <td style="text-align:right;">68,099</td>
+          <td style="text-align:right;">88</td>
           <td>Racially identifiable</td>
         </tr>
 
       
         <tr>
           <td>Lyndale Elementary</td>
-          <td>67993</td>
-          <td>67265</td>
-          <td>76</td>
+          <td style="text-align:right;">67,993</td>
+          <td style="text-align:right;">67,265</td>
+          <td style="text-align:right;">76</td>
           <td>Other</td>
         </tr>
 
       
         <tr>
           <td>Washburn High</td>
-          <td>65417</td>
-          <td>62484</td>
-          <td>48</td>
+          <td style="text-align:right;">65,417</td>
+          <td style="text-align:right;">62,484</td>
+          <td style="text-align:right;">48</td>
           <td>Other</td>
         </tr>
 
       
         <tr>
           <td>Lucy Laney Elementary</td>
-          <td>51510</td>
-          <td>56486</td>
-          <td>99</td>
+          <td style="text-align:right;">51,510</td>
+          <td style="text-align:right;">56,486</td>
+          <td style="text-align:right;">99</td>
           <td>Racially identifiable</td>
         </tr>
 
       
         <tr>
           <td>Waite Park Elementary</td>
-          <td>73144</td>
-          <td>71007</td>
-          <td>61</td>
+          <td style="text-align:right;">73,144</td>
+          <td style="text-align:right;">71,007</td>
+          <td style="text-align:right;">61</td>
           <td>Other</td>
         </tr>
 
       
         <tr>
           <td>Roosevelt High</td>
-          <td>67993</td>
-          <td>66521</td>
-          <td>86</td>
+          <td style="text-align:right;">67,993</td>
+          <td style="text-align:right;">66,521</td>
+          <td style="text-align:right;">86</td>
           <td>Other</td>
         </tr>
 
       
         <tr>
           <td>Windom Elementary</td>
-          <td>65932</td>
-          <td>66431</td>
-          <td>53</td>
+          <td style="text-align:right;">65,932</td>
+          <td style="text-align:right;">66,431</td>
+          <td style="text-align:right;">53</td>
           <td>Other</td>
         </tr>
 
       
         <tr>
           <td>Stadium View</td>
-          <td>73659</td>
-          <td>72629</td>
-          <td>93</td>
+          <td style="text-align:right;">73,659</td>
+          <td style="text-align:right;">72,629</td>
+          <td style="text-align:right;">93</td>
           <td>Other</td>
         </tr>
 
       
         <tr>
           <td>Marcy Open School</td>
-          <td>70053</td>
-          <td>67757</td>
-          <td>45</td>
+          <td style="text-align:right;">70,053</td>
+          <td style="text-align:right;">67,757</td>
+          <td style="text-align:right;">45</td>
           <td>Other</td>
         </tr>
 
       
         <tr>
           <td>Pierre Bottineau French Immersion</td>
-          <td>49449</td>
-          <td>52128</td>
-          <td>68</td>
+          <td style="text-align:right;">49,449</td>
+          <td style="text-align:right;">52,128</td>
+          <td style="text-align:right;">68</td>
           <td>Other</td>
         </tr>
 
@@ -527,3 +560,38 @@
       </tbody>
     </table>
     
+    
+<!-- jQuery -->
+<script type="text/javascript" charset="utf8" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.2.min.js"></script>
+ 
+<!-- DataTables -->
+<script type="text/javascript" charset="utf8" src="http://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.4/jquery.dataTables.min.js"></script>
+
+<script type="text/javascript">
+
+
+  $(document).ready(function(){
+    var schooltable = $('#schooltable').dataTable({
+
+         
+      
+    });
+        	        // Add filter links
+	        $('.filter-links').show();
+	        $('.filter-links a').click(function(e) {
+	          e.preventDefault();
+	          var $thisLink = $(this);
+	          
+	          if ($thisLink.hasClass('filter-clear')) {
+	            schooltable.fnFilter('', 4);
+	          }
+	          else {
+	            schooltable.fnFilter($thisLink.text(), 4);
+	          }
+	          
+	          $('.filter-links a').removeClass('filtering');
+	          $thisLink.addClass('filtering');
+	        });
+    
+  });
+</script>
