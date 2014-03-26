@@ -22,7 +22,7 @@ with open('../data-processing/school-aggregates.csv','rU') as f:
 
 with open('frp-v-medsal.json','wb') as schooljson:
 
-  colors = {'ri': '#af8dc3', 'notitle1':'#7fbf7b', 'none':'#a0a0a0'}
+  colors = {'ri': '#fc8d62', 'notitle1':'#66c2a5', 'none':'#8da0cb'}
 
   categorytitles = {'ri':'Racially identifiable schools',
                     'notitle1':'Non-Title I schools',
